@@ -1,0 +1,133 @@
+body{
+  font-family: 'Ubuntu Mono', monospace;
+  font-size:20px;
+  transition: .7s;
+}
+
+.hidden{
+  display:none;
+}
+
+.container {
+  display:flex;
+}
+
+.container.column{
+  flex-direction: column;
+}
+
+.top{
+  width:100%;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+header{
+  width:90%;
+  margin:auto;
+  justify-content: space-between;
+  padding-top:15px;
+  padding-bottom:15px;
+  height:72px;
+}
+
+li{
+  text-transform: lowercase;
+}
+
+.nav-list{
+  justify-content: space-around;
+}
+
+.nav-list > li {
+  margin-left:15px;
+  margin-right:15px;
+  padding-top: 10px;
+  padding-bottom:10px;
+}
+
+.nav-list > li:hover{
+  border-bottom: 2px solid lightgray;
+}
+
+.nav-list > li > a{
+  border-bottom: none !important;
+}
+
+a:hover{
+  border-bottom: 2px solid lightgray;
+}
+
+.nav-name{
+  padding-top:10px;
+  padding-bottom:10px;
+  max-width:100%;
+  transition: width .7s;
+}
+
+.nav-name.hide{
+  width:0px;
+  transition: width .7s;
+  overflow:scroll;
+}
+
+.selected{
+  border-bottom: 2px solid black !important;
+}
+
+.body-content{
+  font-size:22px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  max-width:800px;
+  margin:auto;
+  margin-top:0px;
+  transition: margin-top .7s;
+}
+
+.body-content.hide{
+  position:absolute;
+  transition: margin-top .7s;
+  margin-top: -3000px;
+  opacity: 0;
+}
+
+.name{
+  font-size: 72px;
+  order:0;
+  margin-bottom:40px;
+}
+
+#about.about{
+  order:1;
+}
+
+.headshot{
+  order:3;
+  border-radius:100%;
+}
+
+.contact-links{
+  margin-top:40px;
+  margin-bottom:30px;
+  order:2;
+}
+
+.contact-links > ul > li{
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+.spacer{
+  flex:1;
+  transition:.7s;
+}
+
+.spacer.hide{
+  flex:.00001;
+  transition:.7s;
+}

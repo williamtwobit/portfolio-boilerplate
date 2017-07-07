@@ -1,36 +1,56 @@
 <!doctype HTML>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script src="interaction.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>J. Random Hacker</title>
     </head>
     <body>
-        <header>
-            <h1>J. Random Hacker</h1>
-            <nav class="main-nav">
-                <ul>
-                    <li class="main-nav-link"><a href="#about">About me</a></li>
-                    <li class="main-nav-link"><a href="#work">My work</a></li>
-                    <li class="main-nav-link"><a href="#contact">Contact me</a></li>
-                </ul>
-            </nav>
-
+        <div class="top container">
+            <header class="container">
+                <h1 class="nav-name hide">J. Random Hacker</h1>
+                <div class="fill spacer hide"></div>
+                <nav class="main-nav">
+                    <ul class="nav-list container">
+                        <li class=" about-link main-nav-link selected"><a href="#about">About me</a></li>
+                        <li class="work-link main-nav-link"><a href="#work">My work</a></li>
+                        <li class="contact-link main-nav-link"><a href="#contact">Contact me</a></li>
+                    </ul>
+                </nav>
+                <div class="spacer"></div>
+                <nav class="social-nav">
+                    <ul class="nav-list container">
+                        <li class="social-nav-icon"><a href="#github">github</a></li>
+                        <li class="social-nav-icon"><a href="#linkedIn">linkedIn</a></li>
+                </nav>
+            </header>
+        </div>
+        <section class="about container column body-content">
             <img class="headshot" src="http://unsplash.it/150/150"
                 alt="J. Random Hacker headshot">
+
+            <h1 class="name">J. Random Hacker</h1>
 
             <p class="about" id="about">
                 Hi, I'm J. Random Hacker, a full-stack web developer from Nowheresville, USA.  I use React and Node.js to build web apps which leave you with a minty fresh taste in your mouth.  Outside of coding I enjoy watching <a href="https://www.youtube.com/watch?v=6SFNW5F8K9Y">this video</a> on repeat.
             </p>
             <nav class="contact-links">
-                <ul>
+                <ul class="container">
                     <li class="contact-link contact-link-email"><a href="mailto:jrandomhacker@example.com">Email</a>
                     <li class="contact-link contact-link-linkedin"><a href="https://www.linkedin.com">LinkedIn</a>
                     <li class="contact-link contact-link-github"><a href="https://www.github.com">GitHub</a>
                 </ul>
             </nav>
-        </header>
-        <section class="work" id="work">
+        </section>
+        <section class="work body-content hide" id="work">
             <h2>My work</h2>
             <section class="project">
                 <h3>Frobnicator</h3>
@@ -149,7 +169,7 @@
                 </nav>
             </section>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact body-content hide" id="contact">
             <h2>Contact me</h2>
             <form action="https://formspree.io/jrandomhacker@example.com"
                   method="POST">
