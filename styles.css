@@ -66,12 +66,13 @@ a:hover{
   padding-bottom:10px;
   max-width:100%;
   transition: width .7s;
+  overflow:hidden;
 }
 
 .nav-name.hide{
   width:0px;
   transition: width .7s;
-  overflow:scroll;
+  overflow:hidden;
 }
 
 .selected{
@@ -87,6 +88,7 @@ a:hover{
   margin:auto;
   margin-top:0px;
   transition: margin-top .7s;
+  flex-wrap: wrap;
 }
 
 .body-content.hide{
@@ -131,3 +133,208 @@ a:hover{
   flex:.00001;
   transition:.7s;
 }
+
+.section-header{
+  width:100%;
+  font-size: 72px;
+  text-transform: capitalize;
+  margin-bottom:40px;
+}
+
+.project-holder{
+  width:300px;
+  height:300px;
+  overflow:hidden;
+  position:relative;
+  z-index:9998;
+}
+
+.project-image{
+  height:100%;
+  position:relative;
+  z-index:9998;
+}
+.project-info{
+  color: white;
+  padding:10px;
+  opacity:0;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0, 0, 0, 0.85);
+  z-index:9999;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  justify-content: center;
+  transition:opacity .2s ease-in;
+}
+
+.project-info:hover{
+  color: white;
+  padding:10px;
+  opacity:1;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0, 0, 0, 0.85);
+  z-index:9999;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  justify-content: center;
+  transition:opacity .2s ease-in;
+}
+
+.made-with{
+  display:inline-block;
+  width:50%;
+  border-bottom:2px solid white;
+  margin:5px 0px;
+}
+
+.love{
+  margin-bottom:-3px;
+  width:20px;
+}
+
+.project-stack{
+  font-size:18px;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+
+.stack-holder{
+  position:absolute;
+  bottom:0;
+  padding-bottom:10px;
+}
+
+.project-description{
+  margin-top:-50px;
+}
+
+.project-title{
+  font-size:30px;
+  text-transform:lowercase;
+}
+
+.project-links > ul{
+  justify-content: space-around;
+}
+
+.work{
+  justify-content: space-between;
+  flex-wrap:wrap;
+  padding-bottom:50px;
+}
+
+.project{
+  margin-bottom:30px;
+}
+
+label{
+  text-transform: lowercase;
+  text-align:left;
+  width:100%;
+  margin-left:5px;
+}
+
+form{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.form{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  align-items: center;
+}
+
+input{
+  box-sizing: border-box;
+  padding:10px;
+  outline:none;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size:20px;
+  width:100%;
+  height:50px;
+  border:2px solid lightgray;
+  border-radius: 3px;
+  transition: border .1s ease-in;
+}
+
+input:focus{
+  outline:none;
+  border:2px solid black;
+  transition: border .1s ease-in;
+}
+
+.left-column{
+  width:25%;
+  margin:10px;
+}
+
+.message-input{
+  width:65%;
+  margin:10px;
+}
+
+.message-input > label{
+  width:100%;
+}
+
+textarea{
+  box-sizing: border-box;
+  font-family: 'Ubuntu Mono', monospace;
+  padding:10px;
+  font-size:20px;
+  outline:none;
+  width:100%;
+  height:133px;
+  resize:none;
+  border:2px solid lightgray;
+  border-radius: 3px;
+  transition: border .1s ease-in;
+}
+
+textarea:focus{
+  outline:none;
+  border:2px solid black;
+  transition: border .1s ease-in;
+}
+
+.submit-button{
+  margin-top:10px;
+  width:65%;
+}
+
+.row-1{
+  width:65%;
+  display:flex;
+  justify-content:space-between;
+  margin:10px;
+}
+
+input[type="submit"]{
+  border:none;
+  transition: border background-color transform .2s ease-in;
+}
+
+input[type="submit"]:hover{
+  transition: transform .2s ease-in;
+  transform: scale(1.01);
+}
+
+input[type="submit"]:active{
+  transition: border background-color .2s ease-in;
+  background-color: gray;
+  border: 2px solid black;
+}
+
